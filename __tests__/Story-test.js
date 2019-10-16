@@ -4,11 +4,11 @@
 
 import 'react-native';
 import React from 'react';
-import Changemode from '../comps/Story';
+import Story from '../comps/Story';
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
-  renderer.create(<Changemode />);
+  renderer.create(<Story />);
 });
