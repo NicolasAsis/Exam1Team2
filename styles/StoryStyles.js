@@ -12,6 +12,9 @@ switch:{
   size:20,
   top:80,
   color:"green"
+},
+text:{
+ fontSize:35,
 }
 };
 

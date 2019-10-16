@@ -7,7 +7,7 @@ function Story(){
   const [showText, setShowText] = useState(false);
 
 return(
-<View style={{backgroundColor: nightMode ? '#000000':'#b3f0ff'}} >
+<View style={{height: "63%", backgroundColor: nightMode ? '#000000':'#b3f0ff'}} >
 
 <View style={styles.bg}>
 <Text style={{color:nightMode ? '#FFFFFF':'#000000'}}>Scroll</Text>
