@@ -1,19 +1,17 @@
 import React, {useState} from 'react';
-import {View,Text} from 'react-native';
+import {View} from 'react-native';
 
 import Footer from "./Picker"
-
+import Story from './Story';
 import Header from './Header';
 
 
 const Main = ()=>{
     return (
       <View> 
-
-
+    <Header />
+      <Story />
         <Footer />
-
-          <Header />
 
       </View>
     )
