@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import {View,Text} from 'react-native';
+import {View} from 'react-native';
 
 import Footer from "./Picker"
-import Header from './Header';
 import Story from './Story';
+import Header from './Header';
 
 
 const Main = ()=>{
@@ -12,7 +12,6 @@ const Main = ()=>{
     <Header />
       <Story />
         <Footer />
-      
 
       </View>
     )
