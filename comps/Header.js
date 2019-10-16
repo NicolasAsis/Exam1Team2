@@ -17,6 +17,8 @@ function Header(){
 
     var comp = null;
 
+    var but = null;
+
     if (show === 1){
        comp = (<TextInput
             style={inpStyle}
@@ -25,16 +27,31 @@ function Header(){
             placeholder='New Title'
             placeholderTextColor='#000000'
         />)
-        <Button
+        but = (
+            <Button
             title="Edit"
+            style={{
+                fontSize:15
+            }}
             onPress={()=>{
                 setShow(2);
             }}
-        />
-    }
-
+            />
+        )
+       }
     if (show === 2){
         comp = <Text></Text>;
+        but = (
+            <Button
+            title="Edit"
+            style={{
+                fontSize:15
+            }}
+            onPress={()=>{
+                setShow(1);
+            }}
+            />
+        )
     }
     
     return (
@@ -55,13 +72,18 @@ function Header(){
             <Text style={{
             fontSize:25
             }}>{value}</Text>
+
+            {but}
             
-            <Button
+            {/* <Button
             title="Edit"
             style={{
                 fontSize:15
             }}
-            />
+            onPress={()=>{
+                setShow(2);
+            }}
+            /> */}
         </View>
             {comp}
         {/* <TextInput
