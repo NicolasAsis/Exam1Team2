@@ -21,6 +21,8 @@ function Footer(){
         <Picker.Item label="chaze style" color="grey" value="Story 3" />
         </Picker>
 
+        
+
         </View>
     )
 
