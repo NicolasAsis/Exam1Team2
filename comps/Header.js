@@ -4,6 +4,38 @@ import {View,Text,TextInput,Button} from 'react-native';
 
 function Header(){
     const [value, onChangeText] = React.useState('The Story of My Life');
+    const [inpStyle, setInpStyle] = useState({
+        position:'relative', 
+        height: 40, 
+        width: 100, 
+        borderColor: 'black', 
+        borderWidth: 1,
+        marginLeft:150,
+        fontSize:15
+    });
+    const [show, setShow] = useState(1);
+
+    var comp = null;
+
+    if (show === 1){
+       comp = (<TextInput
+            style={inpStyle}
+            onChangeText={text => onChangeText(text)}
+            value={value}
+            placeholder='New Title'
+            placeholderTextColor='#000000'
+        />)
+        <Button
+            title="Edit"
+            onPress={()=>{
+                setShow(2);
+            }}
+        />
+    }
+
+    if (show === 2){
+        comp = <Text></Text>;
+    }
     
     return (
         <View style={{
@@ -31,20 +63,17 @@ function Header(){
             }}
             />
         </View>
-
-        <TextInput
-            style={{
-                position:'relative', 
-                height: 20, 
-                width: 100, 
-                borderColor: 'black', 
-                borderWidth: 1,
-                marginLeft:150
-                }}
+            {comp}
+        {/* <TextInput
+            style={inpStyle}
             onChangeText={text => onChangeText(text)}
             value={value}
-        />
+            placeholder='New Title'
+            placeholderTextColor='#000000'
+        /> */}
+
         </View>
+
     );
 }
 export default Header;
