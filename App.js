@@ -6,7 +6,20 @@
  * @flow
  */
 
-import React from 'react';
 
+import React, { Component }from 'react';
+import {View} from 'react-native';
+import Main from './comps/Main';
+
+function App(){
+    return (
+        <View>
+            <Main />
+        </View>
+    );
+}
 
 export default App;
+
+
+
