@@ -6,7 +6,22 @@
  * @flow
  */
 
-import React from 'react';
+import React, { Component }from 'react';
+import { View, Switch, StyleSheet, Text} from 'react-native';
 
+import Footer from "./comps/Picker"
+import Main from './comps/Main';
+
+
+function App(){
+    return(
+        <View>
+   
+                <Footer />
+        
+        </View>
+    )
+}
 
 export default App;
+
