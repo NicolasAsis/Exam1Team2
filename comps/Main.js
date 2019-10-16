@@ -1,11 +1,16 @@
 import React, {useState} from 'react';
-import {View,Text} from 'react-native';
+import {View,Text, ScrollView, Switch} from 'react-native';
+import Story from './Story';
 
-const Main = ()=>{
+
+function Main(){
+
+
     return (
-      <View> 
-
+      <View>
+        <Story />
       </View>
+
     )
   }
 
