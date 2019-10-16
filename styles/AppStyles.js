@@ -3,18 +3,21 @@ import {StyleSheet} from 'react-native';
 var styles = StyleSheet.create({
 
   scrollView: {
-    backgroundColor: 'blue',
+    backgroundColor: '#3fd4d9',
     marginHorizontal: 20,
 
   },
 
   text: {
-    fontSize: 35
+    fontSize: 30,
+    lineHeight: 45
+
   },
 
   switch: {
     alignContent: 'center',
-    justifyItems: 'center'
+    flexDirection: 'row',
+
   }
 
 })

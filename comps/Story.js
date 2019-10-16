@@ -9,10 +9,9 @@ const [showText, setShowText] = useState(false);
 
     return (
       <View>
-        <View >
-          <Text>Scroll</Text>
+        <View   style = {styles.switch}>
+          <Text style={styles.text}>Scroll</Text>
           <Switch
-            style
             value = {showText}
             onValueChange = {()=>{setShowText(!showText)}}
 
