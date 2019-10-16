@@ -17,7 +17,7 @@ function App(){
     return(
         <View>
    
-                <Footer />
+                <Main />
         
         </View>
     )

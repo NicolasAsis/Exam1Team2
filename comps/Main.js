@@ -5,8 +5,8 @@ import Footer from "./Picker"
 const Main = ()=>{
     return (
       <View> 
-        
 
+        <Footer />
       </View>
     )
   }
